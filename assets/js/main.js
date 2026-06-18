@@ -27,7 +27,7 @@
   /* ---------- Scroll fluide (Lenis) ---------- */
   let lenis = null;
   if (!reduceMotion && typeof window.Lenis === "function") {
-    lenis = new window.Lenis({ duration: 1.1, smoothWheel: true });
+    lenis = new window.Lenis({ lerp: 0.08, smoothWheel: true, wheelMultiplier: 1 });
     const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
     requestAnimationFrame(raf);
     lenis.on("scroll", onScroll);

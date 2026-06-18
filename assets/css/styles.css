@@ -168,7 +168,7 @@ p { margin: 0; text-wrap: pretty; }
 .intro__grid { display: grid; gap: clamp(2rem, 5vw, 4rem); }
 .intro__text h2 { font-size: clamp(1.9rem, 4.6vw, 3.4rem); }
 .fullbleed { width: 100%; margin-top: clamp(3rem, 7vw, 6rem); }
-.fullbleed img { width: 100%; height: clamp(320px, 60vh, 760px); object-fit: cover; }
+.fullbleed img { width: 100%; height: auto; display: block; }
 .fullbleed figcaption { font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-soft); padding: 0.8rem var(--pad) 0; }
 
 /* =========================================================================
