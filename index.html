@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <!-- PREVIEW client : non référencé. À RETIRER pour la production sur le domaine final. -->
+  <meta name="robots" content="noindex" />
+
+  <title>Villa Secret Harbor — Villa de prestige à Anse Marcel, Saint-Martin</title>
+  <meta name="description" content="Vue mer, calme absolu et nature préservée à Anse-Marcel. Villa de prestige avec 3 suites, piscine à débordement, bar extérieur et jardin tropical." />
+  <meta name="theme-color" content="#FBF9F4" />
+
+  <!-- Open Graph / Twitter — TODO: remplacer le chemin par une URL ABSOLUE (https://votre-domaine/...) une fois le domaine en ligne -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Villa Secret Harbor — Anse Marcel, Saint-Martin" />
+  <meta property="og:description" content="Villa de prestige : vue mer, piscine à débordement, 3 suites, nature préservée à Anse Marcel." />
+  <meta property="og:image" content="assets/photos/01-hero.jpeg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/photos/01-hero.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preload" as="image" href="assets/photos/01-hero-1280.jpeg" />
+
+  <!-- Schema.org — LodgingBusiness (aucun prix inventé) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Villa Secret Harbor",
+    "description": "Villa de prestige à Anse Marcel, Saint-Martin : vue mer, piscine à débordement, 3 suites, bar extérieur, douche en plein air et jardin tropical.",
+    "image": "assets/photos/01-hero.jpeg",
+    "url": "https://www.airbnb.fr/rooms/1197051105797112250",
+    "sameAs": "https://www.airbnb.fr/rooms/1197051105797112250",
+    "numberOfRooms": "3",
+    "petsAllowed": false,
+    "smokingAllowed": false,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Anse Marcel",
+      "addressRegion": "Saint-Martin",
+      "addressCountry": "FR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "25",
+      "bestRating": "5"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Piscine à débordement (eau salée, chauffée)", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Vue sur la baie", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Bar extérieur", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Climatisation", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wifi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <a class="brand" href="#top">Villa Secret Harbor</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#lieu">Le lieu</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#suites">Les suites</a>
+      <a href="#emplacement">Emplacement</a>
+      <a href="#avis">Avis</a>
+      <a href="#hote">L'hôte</a>
+    </nav>
+    <div class="header-right">
+      <a class="btn nav-cta" href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener">Réserver <span class="arr">→</span></a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Fermer le menu" id="drawerClose">&times;</button>
+    <a href="#lieu">Le lieu</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#suites">Les suites</a>
+    <a href="#equipements">Équipements</a>
+    <a href="#emplacement">Emplacement</a>
+    <a href="#avis">Avis</a>
+    <a href="#hote">L'hôte</a>
+    <a href="#reserver">Réserver</a>
+  </div>
+
+  <span id="top"></span>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="assets/photos/01-hero.jpeg"
+           srcset="assets/photos/01-hero-1280.jpeg 1280w, assets/photos/01-hero.jpeg 1920w"
+           sizes="100vw" width="1920" height="1280" fetchpriority="high"
+           alt="Villa Secret Harbor, vue mer depuis la terrasse, Anse Marcel" />
+    </div>
+    <div class="hero__inner">
+      <p class="hero__badge"><span class="star">★</span> 5,0 · Coup de cœur voyageurs</p>
+      <h1>Villa Secret&nbsp;Harbor</h1>
+      <p class="hero__sub">Nature préservée à Anse Marcel · Saint-Martin</p>
+      <div class="hero__actions">
+        <a class="btn btn--light btn--lg" href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener">Réserver <span class="arr">→</span></a>
+        <a class="btn btn--ghost btn--lg" href="#lieu" style="--fg:var(--cream); --bd:rgba(251,249,244,0.4);">Découvrir</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#lieu">Défiler ↓</a>
+  </section>
+
+  <!-- ===================== L'ESPRIT DU LIEU ===================== -->
+  <section class="section" id="lieu">
+    <div class="container intro__grid">
+      <div class="intro__text reveal">
+        <p class="eyebrow">L'esprit du lieu</p>
+        <h2>Un havre de paix, suspendu au-dessus de la mer.</h2>
+        <hr class="rule" />
+        <p class="lead">
+          Vue mer, calme absolu et nature préservée à Anse-Marcel. Villa de prestige, spacieuse,
+          avec 3 suites, piscine à débordement, bar extérieur, douche en plein air et jardin tropical.
+          À pied : plage, marina et restaurants. Parfait pour se détendre, explorer des criques
+          secrètes et randonner en pleine nature.
+        </p>
+      </div>
+    </div>
+    <figure class="fullbleed reveal">
+      <img src="assets/photos/02.jpeg"
+           srcset="assets/photos/02-1280.jpeg 1280w, assets/photos/02.jpeg 1920w"
+           sizes="100vw" width="1920" height="1279" loading="lazy"
+           alt="Piscine à débordement face à la mer" />
+      <figcaption>Piscine à débordement, face à la baie d'Anse Marcel.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ===================== GALERIE ===================== -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <p class="eyebrow reveal">Galerie</p>
+      <h2 class="reveal" style="font-size:clamp(1.9rem,4.6vw,3.4rem);">Quelques images valent mieux qu'une longue description.</h2>
+      <div class="gallery__grid" id="lightgallery">
+        <a class="gallery__item gallery__item--wide glightbox reveal" href="assets/photos/02.jpeg" data-gallery="villa" data-glightbox="description: Piscine à débordement face à la mer">
+          <img src="assets/photos/02-1280.jpeg" width="1920" height="1080" loading="lazy" alt="Piscine à débordement face à la mer" />
+        </a>
+        <a class="gallery__item glightbox reveal" href="assets/photos/03.jpeg" data-gallery="villa" data-glightbox="description: Espace de vie et terrasse">
+          <img src="assets/photos/03-1280.jpeg" width="1920" height="1440" loading="lazy" alt="Espace de vie / terrasse de la villa" />
+        </a>
+        <a class="gallery__item gallery__item--tall glightbox reveal" href="assets/photos/04.jpeg" data-gallery="villa" data-glightbox="description: Extérieur de la villa">
+          <img src="assets/photos/04-1280.jpeg" width="960" height="1280" loading="lazy" alt="Vue / extérieur de la villa" />
+        </a>
+        <a class="gallery__item glightbox reveal" href="assets/photos/05.jpeg" data-gallery="villa" data-glightbox="description: Ambiance de la villa">
+          <img src="assets/photos/05-1280.jpeg" width="1920" height="1280" loading="lazy" alt="Détail / ambiance de la villa" />
+        </a>
+        <a class="gallery__item glightbox reveal" href="assets/photos/chambre-1.jpeg" data-gallery="villa" data-glightbox="description: Chambre 1, accès terrasse et piscine">
+          <img src="assets/photos/chambre-1-1280.jpeg" width="1920" height="1280" loading="lazy" alt="Chambre 1, accès direct terrasse et piscine" />
+        </a>
+        <a class="gallery__item glightbox reveal" href="assets/photos/chambre-2.jpeg" data-gallery="villa" data-glightbox="description: Suite panoramique à l'étage">
+          <img src="assets/photos/chambre-2-1280.jpeg" width="1920" height="1280" loading="lazy" alt="Suite panoramique à l'étage" />
+        </a>
+        <a class="gallery__item glightbox reveal" href="assets/photos/chambre-3.jpeg" data-gallery="villa" data-glightbox="description: Bungalow indépendant avec terrasse privée">
+          <img src="assets/photos/chambre-3-1280.jpeg" width="1920" height="1280" loading="lazy" alt="Bungalow indépendant avec terrasse privée" />
+        </a>
+      </div>
+      <p class="muted reveal" style="margin-top:1.5rem; font-size:0.9rem;">
+        <span class="placeholder">À COMPLÉTER</span> Galerie d'aperçu (9 visuels). Pour un site « plein de photos »,
+        ajouter le pack complet de Cécile (intérieurs, salle de bain, cuisine, bar extérieur, jardin, couchers de soleil) dans <code>assets/photos/</code>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== LES SUITES ===================== -->
+  <section class="section" id="suites" style="background:var(--white);">
+    <div class="container">
+      <p class="eyebrow reveal">Les suites</p>
+      <h2 class="reveal" style="font-size:clamp(1.9rem,4.6vw,3.4rem);">Trois chambres, trois manières d'habiter la vue.</h2>
+
+      <article class="suite reveal">
+        <div class="suite__media"><img src="assets/photos/chambre-1.jpeg" srcset="assets/photos/chambre-1-1280.jpeg 1280w, assets/photos/chambre-1.jpeg 1920w" sizes="(min-width:860px) 50vw, 100vw" width="1920" height="1280" loading="lazy" alt="Chambre 1, accès direct terrasse et piscine" /></div>
+        <div class="suite__body">
+          <p class="suite__index">Chambre 01 · Rez-de-chaussée</p>
+          <h3 class="suite__name">Accès terrasse &amp; piscine</h3>
+          <p class="muted">Au rez-de-chaussée, avec un accès direct à la terrasse et à la piscine. Lit king size, salle de bain privative avec WC, vue mer et montagne.</p>
+          <div class="suite__tags"><span>Lit king size</span><span>Salle de bain privative</span><span>Vue mer &amp; montagne</span></div>
+        </div>
+      </article>
+
+      <article class="suite suite--reverse reveal">
+        <div class="suite__media"><img src="assets/photos/chambre-2.jpeg" srcset="assets/photos/chambre-2-1280.jpeg 1280w, assets/photos/chambre-2.jpeg 1920w" sizes="(min-width:860px) 50vw, 100vw" width="1920" height="1280" loading="lazy" alt="Suite panoramique à l'étage" /></div>
+        <div class="suite__body">
+          <p class="suite__index">Chambre 02 · À l'étage</p>
+          <h3 class="suite__name">La vue panoramique</h3>
+          <p class="muted">À l'étage, une vue exceptionnelle. Lit king size, salle de bain privative, panorama sur la baie.</p>
+          <div class="suite__tags"><span>Lit king size</span><span>Salle de bain privative</span><span>Vue panoramique</span></div>
+        </div>
+      </article>
+
+      <article class="suite reveal">
+        <div class="suite__media"><img src="assets/photos/chambre-3.jpeg" srcset="assets/photos/chambre-3-1280.jpeg 1280w, assets/photos/chambre-3.jpeg 1920w" sizes="(min-width:860px) 50vw, 100vw" width="1920" height="1280" loading="lazy" alt="Bungalow indépendant avec terrasse privée" /></div>
+        <div class="suite__body">
+          <p class="suite__index">Chambre 03 · Bungalow</p>
+          <h3 class="suite__name">Le bungalow indépendant</h3>
+          <p class="muted">Un bungalow indépendant, avec terrasse et bains de soleil privés. Lit king size, salle de bain privative. Pour ceux qui cherchent l'intimité absolue.</p>
+          <div class="suite__tags"><span>Lit king size</span><span>Terrasse privée</span><span>Bains de soleil</span></div>
+        </div>
+      </article>
+
+      <p class="muted reveal" style="margin-top:2.5rem; font-size:0.95rem;">Literie de qualité hôtelière dans toutes les chambres.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ÉQUIPEMENTS ===================== -->
+  <section class="section amenities" id="equipements">
+    <div class="container">
+      <p class="eyebrow reveal">Équipements</p>
+      <h2 class="reveal" style="font-size:clamp(1.9rem,4.6vw,3.4rem);">Tout le confort d'une maison de prestige.</h2>
+
+      <div class="amenities__grid">
+        <div class="amenity-group reveal">
+          <h3>Piscine &amp; extérieur</h3>
+          <ul>
+            <li><i data-lucide="waves"></i><span>Piscine privée à débordement, eau salée, chauffée — toute l'année, 24h/24</span></li>
+            <li><i data-lucide="eye"></i><span>Vue sur la baie &amp; sur le jardin</span></li>
+            <li><i data-lucide="umbrella"></i><span>Accès partagé à la plage</span></li>
+            <li><i data-lucide="wine"></i><span>Bar extérieur</span></li>
+            <li><i data-lucide="shower-head"></i><span>Douche en plein air</span></li>
+            <li><i data-lucide="trees"></i><span>Jardin tropical clôturé (portail)</span></li>
+            <li><i data-lucide="home"></i><span>Bungalow indépendant</span></li>
+          </ul>
+        </div>
+
+        <div class="amenity-group reveal" data-delay="1">
+          <h3>Confort</h3>
+          <ul>
+            <li><i data-lucide="snowflake"></i><span>Climatisation</span></li>
+            <li><i data-lucide="fan"></i><span>Ventilateur de plafond</span></li>
+            <li><i data-lucide="bed-double"></i><span>Literie de qualité hôtelière</span></li>
+            <li><i data-lucide="washing-machine"></i><span>Machine à laver</span></li>
+            <li><i data-lucide="wind"></i><span>Sèche-linge</span></li>
+          </ul>
+        </div>
+
+        <div class="amenity-group reveal" data-delay="2">
+          <h3>Cuisine &amp; multimédia</h3>
+          <ul>
+            <li><i data-lucide="utensils"></i><span>Cuisine entièrement équipée</span></li>
+            <li><i data-lucide="wifi"></i><span>Wifi</span></li>
+            <li><i data-lucide="tv"></i><span>TV HD avec Netflix &amp; Disney+</span></li>
+          </ul>
+        </div>
+
+        <div class="amenity-group reveal" data-delay="3">
+          <h3>Autonomie &amp; sécurité</h3>
+          <ul>
+            <li><i data-lucide="droplets"></i><span>Citerne d'eau potable + générateur — sans coupure d'eau ni d'électricité</span></li>
+            <li><i data-lucide="car"></i><span>Grand parking privé (plusieurs véhicules ; 2 places allée gratuites)</span></li>
+            <li><i data-lucide="video"></i><span>Caméras de surveillance extérieures</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note reveal">
+        <strong>Bon à savoir</strong>
+        <p>En toute transparence : le logement ne dispose pas de détecteur de monoxyde de carbone. L'annonce Airbnb recense 54 équipements au total — la liste ci-dessus est une sélection ; <a href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">voir la liste complète sur Airbnb</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EMPLACEMENT ===================== -->
+  <section class="section" id="emplacement">
+    <div class="container location__grid">
+      <div class="reveal">
+        <p class="eyebrow">L'emplacement</p>
+        <h2 style="font-size:clamp(1.9rem,4.6vw,3.4rem);">Sur les hauteurs d'Anse Marcel.</h2>
+        <hr class="rule" />
+        <p class="lead">
+          Une zone calme et résidentielle de villas haut de gamme, au nord de Saint-Martin (côté français).
+          La villa domine la baie depuis le haut d'une colline — c'est ce qui offre cette vue. À pied :
+          le port, la plage d'Anse Marcel et les commerces.
+        </p>
+        <ul class="distances">
+          <li><i data-lucide="footprints"></i><span class="d-label">Plage, marina &amp; restaurants d'Anse Marcel</span><span class="d-value">À pied</span></li>
+          <li><i data-lucide="utensils"></i><span class="d-label">Baie Orientale &amp; Grand Case</span><span class="d-value">~10 min</span></li>
+          <li><i data-lucide="plane"></i><span class="d-label">Aéroport de Grand Case (SFG)</span><span class="d-value">10 min</span></li>
+          <li><i data-lucide="plane"></i><span class="d-label">Aéroport Princess Juliana (SXM)</span><span class="d-value">30 min</span></li>
+          <li><i data-lucide="shopping-cart"></i><span class="d-label">Super U, pharmacie, boulangerie</span><span class="d-value">5 min</span></li>
+        </ul>
+      </div>
+      <div class="reveal" data-delay="1">
+        <div class="map-embed">
+          <iframe
+            title="Carte d'Anse Marcel, Saint-Martin"
+            src="https://www.google.com/maps?q=Anse+Marcel,+Saint-Martin&z=14&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="muted" style="font-size:0.82rem; margin-top:0.8rem;">Carte centrée sur la zone d'Anse Marcel (l'adresse exacte est communiquée après réservation).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVIS ===================== -->
+  <section class="section reviews" id="avis">
+    <div class="container">
+      <div class="reviews__head reveal">
+        <div class="reviews__score">5,0<small>★ · 25 commentaires</small></div>
+        <span class="badge-super"><i data-lucide="award"></i> Superhôte · 1 % des logements préférés sur Airbnb</span>
+      </div>
+
+      <div class="reviews__grid">
+        <figure class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« Séjour absolument merveilleux à Anse Marcel. La villa est superbe, décorée avec beaucoup de goût, très propre et parfaitement équipée. La vue est tout simplement incroyable, encore plus belle en vrai que sur les photos, et la piscine est un vrai bonheur à toute heure. Emplacement idéal : calme, entouré de verdure, proche de la plage et des restaurants. Un véritable havre de paix. Cécile est une hôte très attentionnée, réactive et disponible. Nous recommandons les yeux fermés et nous reviendrons ! »</p></blockquote>
+          <figcaption class="who"><b>Frederic</b> — Toronto, Canada · févr. 2026</figcaption>
+        </figure>
+
+        <figure class="review-card reveal" data-delay="1">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« La villa de Cécile est vraiment magnifique et parfaitement située. Décoration et mobilier d'excellente qualité. La piscine à débordement est le top avec la vue sur l'Anse Marcel. Cécile, Laurène et Carole-Anne sont des hôtes très accueillantes et hyper réactives. Nous y reviendrons dès que possible. »</p></blockquote>
+          <figcaption class="who"><b>Pierre</b> — 9 ans sur Airbnb · août 2025</figcaption>
+        </figure>
+
+        <figure class="review-card reveal" data-delay="2">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« Quel endroit absolument magnifique ! Les photos ne lui rendent pas justice — encore plus époustouflant en personne. L'hôte nous a accueillis personnellement. Nous n'avions pas envie de partir et avons hâte de revenir ! »</p></blockquote>
+          <figcaption class="who"><b>Ruvim</b> — Seattle, WA · mai 2026</figcaption>
+        </figure>
+
+        <figure class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« Idéal pour les voyageurs exigeants qui recherchent intimité et confort. Moderne, propre, tous les équipements nécessaires. La maison est en haut d'une colline escarpée (d'où la vue). À courte distance de Grand Case et d'Orient Bay. D'excellents services de conciergerie disponibles. Vivement recommandé. »</p></blockquote>
+          <figcaption class="who"><b>Alison</b> — Wellesley, MA · avr. 2026</figcaption>
+        </figure>
+
+        <figure class="review-card reveal" data-delay="1">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« Nous n'aurions pas pu imaginer un meilleur logement pour notre première visite à Saint-Martin. Superbes vues sur la montagne et l'océan depuis chaque pièce. Notre famille a adoré la piscine d'eau salée. Finitions intérieures de premier ordre. »</p></blockquote>
+          <figcaption class="who"><b>Ethan</b> — 11 ans sur Airbnb · avr. 2026</figcaption>
+        </figure>
+
+        <figure class="review-card reveal" data-delay="2">
+          <div class="stars">★★★★★</div>
+          <blockquote><p>« Séjour du 3 au 11 avril. Propriétaire et concierge très serviables. La location était magnifique et correspondait en tous points à la description. Le meilleur logement à ce jour. Merci à Cécile et à ses hôtes ! »</p></blockquote>
+          <figcaption class="who"><b>Tim</b> — Savage, MN · avr. 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VOTRE HÔTE ===================== -->
+  <section class="section" id="hote">
+    <div class="container host__grid">
+      <div class="reveal" style="text-align:center;">
+        <img class="host__photo" src="assets/photos/hote-cecile.jpeg" width="720" height="720" loading="lazy" alt="Cécile, Superhôte de la Villa Secret Harbor" />
+      </div>
+      <div class="reveal" data-delay="1">
+        <p class="eyebrow">Votre hôte</p>
+        <h2 class="host__name">Cécile, Superhôte depuis 9 ans</h2>
+        <hr class="rule" />
+        <p class="lead">
+          Mariée et mère de trois enfants, originaire de Troyes en Champagne, Cécile a vécu quinze ans
+          en Guadeloupe avant de s'installer, depuis une dizaine d'années, entre Saint-Barthélemy et
+          Saint-Martin. Superhôte, elle accueille ses voyageurs en français comme en anglais, avec une
+          réactivité saluée par tous : réponse dans l'heure, 100 % des messages.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RÉSERVER ===================== -->
+  <section class="section booking" id="reserver">
+    <div class="container booking__grid">
+      <div class="reveal">
+        <p class="eyebrow">Réserver</p>
+        <h2>Votre séjour à Anse Marcel commence ici.</h2>
+        <div class="price-tag">Tarif sur demande <small>selon saison &amp; durée</small></div>
+        <p class="muted" style="max-width:48ch;">La réservation se fait directement sur l'annonce officielle Airbnb, où vous trouverez les disponibilités et le tarif exact pour vos dates.</p>
+        <div style="margin-top:1.8rem; display:flex; flex-wrap:wrap; gap:0.8rem;">
+          <a class="btn btn--lg" href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener">Réserver sur Airbnb <span class="arr">→</span></a>
+        </div>
+        <ul class="rules">
+          <li>Arrivée entre 16:00 et 20:00 · départ avant 10:00</li>
+          <li>6 voyageurs maximum</li>
+          <li>Non-fumeur à l'intérieur (cendriers disponibles sur la terrasse)</li>
+          <li>Annulation gratuite sous 24 h, puis non remboursable — conditions à jour sur Airbnb</li>
+        </ul>
+      </div>
+
+      <aside class="contact-box reveal" data-delay="1">
+        <dl>
+          <div>
+            <dt>Réservation officielle</dt>
+            <dd><a href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">Annonce Airbnb →</a></dd>
+          </div>
+          <div>
+            <dt>Email de réservation</dt>
+            <dd><span class="placeholder">À CONFIRMER : email</span></dd>
+          </div>
+          <div>
+            <dt>Téléphone</dt>
+            <dd><span class="placeholder">À CONFIRMER : téléphone</span></dd>
+          </div>
+          <div>
+            <dt>WhatsApp direct</dt>
+            <dd><span class="placeholder">À CONFIRMER : WhatsApp</span></dd>
+          </div>
+          <div>
+            <dt>Capacité</dt>
+            <dd>6 voyageurs · 3 chambres · 3 salles de bain</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <h3>Villa Secret Harbor</h3>
+        <p class="muted" style="color:rgba(251,249,244,0.7); margin-top:0.8rem; max-width:34ch;">Villa de prestige en location saisonnière — nature préservée à Anse Marcel, Saint-Martin.</p>
+      </div>
+      <div>
+        <p class="foot-label">Naviguer</p>
+        <ul>
+          <li><a href="#lieu">Le lieu</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#suites">Les suites</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#reserver">Réserver</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-label">Contact</p>
+        <ul>
+          <li><a href="https://www.airbnb.fr/rooms/1197051105797112250" target="_blank" rel="noopener">Réserver sur Airbnb →</a></li>
+          <li>Anse Marcel · Saint-Martin (FWI)</li>
+          <li><span class="placeholder">À CONFIRMER : réseaux sociaux</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <span>© <span id="year"></span> Villa Secret Harbor — Tous droits réservés.</span>
+      <span>Site réalisé par <a href="https://sbintelligence.fr" target="_blank" rel="noopener" class="credit">SB Intelligence</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
